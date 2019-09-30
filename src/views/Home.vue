@@ -8,7 +8,7 @@
         <li v-for="pitem in list" :key="pitem.lid">
           <router-link :to="{path:'/productdetail',query: {lid:pitem.lid}}">
             <div class="pimg">
-              <img :src="'http://127.0.0.1:3000/'+pitem.md" />
+              <img :src="pitem.md" />
             </div>
             <div class="pinfo">
               <div class="pname">{{pitem.lname}}</div>
